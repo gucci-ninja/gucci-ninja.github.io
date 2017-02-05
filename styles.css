@@ -1,0 +1,9 @@
+.get {
+    display:none;
+}
+
+#diagram {
+    float:left;
+    width:600px;
+    height:600px;
+}
