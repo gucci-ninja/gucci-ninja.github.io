@@ -1,3 +1,8 @@
+header {
+    height:449px;
+    background:#ccc;
+}
+
 .get {
     display:none;
 }
