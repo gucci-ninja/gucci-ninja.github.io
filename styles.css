@@ -3,6 +3,20 @@ header {
     background:#449;
 }
 
+.logo {
+    height:56px;
+    width:56px;
+    background:#ccc;
+}
+
+nav a {
+    display: inline-block;
+    margin-left:20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.7); 
+}
+
 .get {
     display:none;
 }
