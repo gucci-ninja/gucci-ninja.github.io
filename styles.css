@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 header {
     height:448px;
     background:url(images/header.png) no-repeat;
@@ -25,7 +27,7 @@ nav a {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgba(0,0,0,0.7); 
+    color: white; 
 }
 
 a:hover {
@@ -90,13 +92,23 @@ footer {
     margin-top: 35px;
 }
 
+h3 {
+    font-weight: 700px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7170a3;
+}
 
 .get {
     display:none;
 }
 
 #diagram {
-    float:left;
+    float: left;
     width:600px;
     height:600px;
+    margin-left: 300px;
+    
 }
+
+
