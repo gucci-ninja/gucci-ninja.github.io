@@ -58,7 +58,7 @@ h1 span {
 .whoami {
     text-align: center;
     font-size: 14px;
-    font-weight: 1400px;
+    font-weight: 700px;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     color: white;
@@ -93,23 +93,69 @@ footer {
 }
 
 h3 {
+    padding: 60px 0 20px;
     font-weight: 700px;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
-    color: #7170a3;
-    
+    color: #63629b;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
 }
 
+.iconsbox {
+    max-width: 840px;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.myface {
+    height: 240px;
+    width: 240px;
+    background:url(images/myface.jpg) no-repeat;
+
+}
+.icon-games {
+    height: 83px;
+    width: 83px;
+    background:url(images/game-icon.png) no-repeat;
+}
+
+.icon-school {
+    height: 83px;
+    width: 83px;
+    background:url(images/school-icon.png) no-repeat;
+}
+.icon-code {
+    height: 83px;
+    width: 83px;
+    background:url(images/code-icon.png) no-repeat;
+}
+.icon-idea {
+    height: 83px;
+    width: 83px;
+    background:url(images/idea-icon.png) no-repeat;
+}
+
+.blurb {
+    max-width: 620px;
+    padding: 0 10px;
+    margin: 50px auto;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300s;
+    font-family: 'PT Sans', sans-serif;
+}
 .get {
     display:none;
 }
 
 #diagram {
-    float: left;
     width:600px;
     height:600px;
-    margin-left: 300px;
-    
+    margin: 0 auto;
 }
 
 
