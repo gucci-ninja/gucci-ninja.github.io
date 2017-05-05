@@ -69,7 +69,7 @@ body {
 }
 
 footer {
-   clear: both;
+    clear: both;
     height: 132px;
     background:url(images/footer.png) no-repeat;
     background-size: cover;
@@ -115,30 +115,52 @@ h3 {
     height: 240px;
     width: 240px;
     background:url(images/myface.jpg) no-repeat;
+    order: 3;
 
 }
 .icon-games {
     height: 83px;
     width: 83px;
     background:url(images/game-icon.png) no-repeat;
+    order: 1;
 }
 
 .icon-school {
     height: 83px;
     width: 83px;
     background:url(images/school-icon.png) no-repeat;
+    order: 2;
 }
 .icon-code {
     height: 83px;
     width: 83px;
     background:url(images/code-icon.png) no-repeat;
+    order: 4;
 }
 .icon-idea {
     height: 83px;
     width: 83px;
     background:url(images/idea-icon.png) no-repeat;
+    order: 5;
 }
 
+@media screen and (max-width: 560px) {
+    .iconsbox {
+        display: block;
+        text-align: center;
+    }
+
+    div {
+        display: inline-block;
+    }
+
+    .myface {
+        display: block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: auto;
+    }
+}
 .blurb {
     max-width: 620px;
     padding: 0 10px;
@@ -156,6 +178,38 @@ h3 {
     width:600px;
     height:600px;
     margin: 0 auto;
+    float: left;
 }
 
+div.get.arc:hover {
+    background-color: red;
+}
 
+.alt-section {
+    background: #b7c8e2;
+}
+
+.thumb-container {
+    max-width: 998px;
+    margin: 0px auto;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+.thumb-unit {
+    display: block;
+    width:50%;
+    height: 245px;
+    float: left;
+
+    background-image: url(images/nutrius.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thumb-overlay {
+    position: absolute;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
