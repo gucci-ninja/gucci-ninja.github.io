@@ -189,18 +189,20 @@ div.get.arc:hover {
     background: #b7c8e2;
 }
 
-.thumb-container {
+.alt-section .thumb-container {
     max-width: 998px;
     margin: 0px auto;
     padding-bottom: 100px;
     overflow: auto;
 }
 
-.thumb-unit {
+.alt-section .thumb-container .thumb-unit {
     display: block;
     width:50%;
     height: 245px;
     float: left;
+    overflow: hidden;
+    text-decoration: none;
 
     background-image: url(images/nutrius.jpg);
     background-position: center center;
@@ -208,8 +210,29 @@ div.get.arc:hover {
     background-size: cover;
 }
 
-.thumb-overlay {
-    position: absolute;
-    opacity: 0.5;
+.alt-section .thumb-container .thumb-unit .thumb-overlay {
+    position: absolute, 100% 0px null 0px;
+    height: 245px; 
+    opacity: 0;
+   text-align: center;
+   padding-top: 30px;
+}
+
+
+.alt-section .thumb-container .thumb-unit .thumb-overlay:hover {
+    position: absolute, 0% 0px null 0px;
+    background: #63629b;
+    opacity: 0.9;
     filter: alpha(opacity=50); /* For IE8 and earlier */
+    transition: 1s;
+
+}
+
+.alt-section .thumb-container .thumb-unit .thumb-overlay:hover strong {
+    font-weight: 700px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+
 }
