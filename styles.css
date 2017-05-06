@@ -281,4 +281,11 @@ div.get.arc:hover {
     padding-bottom: 20px;
 }
 
+p {
+    padding-top: 20px;
+    color: white;
+    font-weight: 700px;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
 
