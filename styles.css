@@ -2,7 +2,7 @@
 
 header {
     height:448px;
-    background:url(images/header.png) no-repeat;
+    background:url(images/header3.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -58,7 +58,7 @@ h1 span {
 .whoami {
     text-align: center;
     font-size: 14px;
-    font-weight: 700px;
+    font-weight: 1400px;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     color: white;
@@ -71,7 +71,7 @@ body {
 footer {
     clear: both;
     height: 132px;
-    background:url(images/footer.png) no-repeat;
+    background:url(images/header3.jpg) no-repeat;
     background-size: cover;
 }
 .content-wrap {
@@ -94,8 +94,8 @@ footer {
 
 h3 {
     padding: 60px 0 20px;
-    font-weight: 700px;
-    font-size: 14px;
+    font-weight: 1400px;
+    font-size: 32px;
     text-transform: uppercase;
     color: #63629b;
     text-align: center;
@@ -164,8 +164,8 @@ h3 {
 .blurb {
     max-width: 620px;
     padding: 0 10px;
-    margin: 50px auto;
-    font-size: 24px;
+    margin: 30px auto;
+    font-size: 20px;
     text-align: center;
     font-weight: 300s;
     font-family: 'PT Sans', sans-serif;
@@ -186,7 +186,7 @@ div.get.arc:hover {
 }
 
 .alt-section {
-    background: #b7c8e2;
+    background: #DCE0D7;
 }
 
 .alt-section .thumb-container {
@@ -197,8 +197,9 @@ div.get.arc:hover {
 }
 
 .alt-section .thumb-container .thumb-unit1 {
+    margin: 6px;
     display: block;
-    width:50%;
+    width:48%;
     height: 245px;
     float: left;
     overflow: hidden;
@@ -207,12 +208,13 @@ div.get.arc:hover {
     background-image: url(images/nutrius.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
 }
 
 .alt-section .thumb-container .thumb-unit2 {
+    margin: 6px;
     display: block;
-    width:50%;
+    width:48%;
     height: 245px;
     float: left;
     overflow: hidden;
@@ -221,12 +223,14 @@ div.get.arc:hover {
     background-image: url(images/litcoin.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
+
 }
 
 .alt-section .thumb-container .thumb-unit3 {
+    margin: 6px;
     display: block;
-    width:50%;
+    width:48%;
     height: 245px;
     float: left;
     overflow: hidden;
@@ -236,11 +240,13 @@ div.get.arc:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .alt-section .thumb-container .thumb-unit4 {
+    margin: 6px;
     display: block;
-    width:50%;
+    width:48%;
     height: 245px;
     float: left;
     overflow: hidden;
@@ -250,14 +256,15 @@ div.get.arc:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .thumb-overlay {
     position: absolute, 100% 0px null 0px;
     height: 245px; 
     opacity: 0;
-   text-align: center;
-   padding-top: 30px;
+    text-align: center;
+    padding-top: 30px;
 }
 
 
@@ -281,11 +288,17 @@ div.get.arc:hover {
     padding-bottom: 20px;
 }
 
-.thumb-unit p {
-    padding-top: 20px;
+.thumb-overlay p {
+    padding: 20px;
     color: white;
     font-weight: 700px;
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+    padding: 0px 50px 0px 50px ;
 }
 
