@@ -196,7 +196,8 @@ div.get.arc:hover {
     overflow: auto;
 }
 
-.alt-section .thumb-container .thumb-unit1 {
+
+.alt-section .thumb-container a{
     margin: 6px;
     display: block;
     width:48%;
@@ -204,59 +205,24 @@ div.get.arc:hover {
     float: left;
     overflow: hidden;
     text-decoration: none;
-
-    background-image: url(images/nutrius.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover
 }
+.alt-section .thumb-container .thumb-unit1 {
+    background-image: url(images/nutrius.jpg);
+}
 
 .alt-section .thumb-container .thumb-unit2 {
-    margin: 6px;
-    display: block;
-    width:48%;
-    height: 245px;
-    float: left;
-    overflow: hidden;
-    text-decoration: none;
-
     background-image: url(images/litcoin.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-
 }
 
 .alt-section .thumb-container .thumb-unit3 {
-    margin: 6px;
-    display: block;
-    width:48%;
-    height: 245px;
-    float: left;
-    overflow: hidden;
-    text-decoration: none;
-
     background-image: url(images/video.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .alt-section .thumb-container .thumb-unit4 {
-    margin: 6px;
-    display: block;
-    width:48%;
-    height: 245px;
-    float: left;
-    overflow: hidden;
-    text-decoration: none;
-
     background-image: url(images/cheesetunnel.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .thumb-overlay {
@@ -270,7 +236,7 @@ div.get.arc:hover {
 
 .thumb-overlay:hover {
     position: absolute, 0% 0px null 0px;
-    background: #63629b;
+    background: black;
     opacity: 0.9;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     transition: all 1s ease;
@@ -301,4 +267,73 @@ ul {
     display: inline-block;
     padding: 0px 50px 0px 50px ;
 }
+.contacts {
+    text-align: center;
+}
+.social-media {
 
+    max-width: 500px;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-media a {
+    padding-bottom: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.bar {
+    width: 250px;
+    height: 0px;
+    border-top: 4px solid black;
+    margin: 0px auto 50px;
+}
+
+.biglink {
+    color: black;
+    display: inline-block;
+    font-size: 72px;
+    font-weight: 300px;
+    font-family: 'PT Sans', sans-serif;
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+
+.biglink:hover {
+    color: gray;
+}
