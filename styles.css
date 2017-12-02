@@ -1,6 +1,7 @@
 @import url("reset.css");
 
 header {
+    margin-top: 0px;
     height:448px;
     background:url(images/header3.jpg) no-repeat;
     background-size: cover;
@@ -15,10 +16,14 @@ header {
     background:url(images/logo.png) no-repeat;
 
 }
-nav {
-    float: right;
-    margin-top: 30px;
-    margin-right: 30px;
+#nav {
+   overflow: hidden; 
+   height: 75px; 
+   position: fixed;
+   padding: 0;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+   background-color: grey;
 }
 nav a {
     font-family: 'PT Sans', sans-serif;
@@ -44,7 +49,7 @@ h1 {
     letter-spacing: 0.05em;
     margin-bottom: 10px;
     clear: both;
-    padding-top: 100px;
+    padding-top: 150px;
 
 }
 
