@@ -21,9 +21,8 @@ header {
    height: 75px; 
    position: fixed;
    padding: 0;
-   opacity: 0.5;
-   filter: alpha(opacity=50);
-   background-color: grey;
+   background-color: rgba(128, 128, 128, 0.5);
+   border-color: transparent;
 }
 nav a {
     font-family: 'PT Sans', sans-serif;
