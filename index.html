@@ -6,70 +6,91 @@
   
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- Font family Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <!-- Smooth scroll DOESNT WORK -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    
+    <!-- Smooth scroll script -->
     <script>
     $('.smooth').on('click', function() {
         $.smoothScroll({
             scrollElement: $('body'),
             scrollTarget: '#' + this.id
-        });
-        
+        }); 
         return false;
     });
     </script>
     </head>
   
     <body>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper teal">
-                <a href="#" class="brand-logo"><img src="images/gucci-ninja.png"></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>
+            window.sr = ScrollReveal();
+        </script>
+            
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper teal">
+                    <a href="#" class="brand-logo"><img src="images/gucci-ninja.png"></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
         <div id="page1">
             <a id="about" class="smooth"></a>
-            <div class="circle">
+            <div class="face"></div>
+            <div class="tagline">
+                <p class ="css-typing">
+                    Hey there! My name is Suhavi and I'm studying software engineering at McMaster <span>|</span>
+                </p>
             </div>
-            <p></p>
-            <p>hey there! my name is suhavi and i'm studying software engineering
-              <span>|</span></p> 
               <div class="arrow bounce">
                     <a href="#projects"><img src="images/double-arrow-down.png" height="42" width="42"></a>
                 </div>
         </div>
         <div id="page2">
-            <a id="projects" class="smooth"></a>
-            <h1 id="myproj">My Projects</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="teal col s12 m4 l4 z-depth-5"><img src="images/nutrius.jpg"></div>
-                    <div class="teal col s12 m4 l4 z-depth-5">2</div>
-                    <div class="teal col s12 m4 l4 z-depth-5">2</div>
-                    <div class="teal col s12 m4 l4 z-depth-5">2</div>
-                </div>  
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m4 l4">2</div>
-                        <div class="col s12 m4 l4">2</div>
-                        <div class="col s12 m4 l4">2</div>
-                        <div class="col s12 m4 l4">2</div>
-                    </div>  
-                    </div>
-
-        </div>
+            <a id="skills" class="smooth"></a>
+            <div class=container>
+                <ul id="skill">
+                    <li><span class="bar skill1"></span><h3></h3></li>
+                    <li><span class="bar skill1"></span><h3></h3></li>
+                    <li><span class="bar skill1"></span><h3></h3></li>
+                    <li><span class="bar skill1"></span><h3></h3></li>
+                    <li><span class="bar skill1"></span><h3></h3></li>
+                    <li><span class="bar skill1"></span><h3></h3></li>
+                    <li><span class="bar skill1"></span><h3></h3></li>
+                </ul>
+            </div>
+            
+        </div>    
         <div id="page3">
             <a id="contact" class="smooth"></a>
         </div>
+        <footer class="page-footer teal">
+                <div class="container">
+                        <div class="footer-cr">All content copyright 2018</div>
+                    </div>
+
+        </footer>
+        <script>
+            sr.reveal('.bar');
+        </script>
     </body>
+    
 </html>
 

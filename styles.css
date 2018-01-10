@@ -1,3 +1,9 @@
+body { 
+  background: #2d2d37;
+  padding: 0;
+  margin: 0;
+}
+
 .brand-logo {
     height:56px;
     width:56px;
@@ -6,9 +12,130 @@
     max-width: 100%;
 }
 
-#page1 {
-    height: 720px;
+li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #383d4e !important;
 }
+
+#page1 {
+  height: 720px;
+}
+
+.face
+{
+    width:260px;
+    height:260px;
+    background: url(images/myface.png) no-repeat;
+    margin: auto;
+    margin-top: 200px;
+    
+}
+
+.tagline {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 20px;
+  clear: both;
+}
+
+.css-typing
+{
+    color: #009688;
+    font-family: Courier New;
+    font-size: 16px;
+    font-weight: 300;
+    width: 50em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+/* Bouncing arrow */
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+} 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Skill bars */
+
+.container {
+  width: 100%;
+}
+#skill { 
+	list-style: none;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 296px;
+	margin: 50px auto 0;
+	position: relative;
+  padding: 30px 0;
+  float: left;
+}
+
+#skill li { 
+	margin-bottom:50px; 
+	height:8px; 
+	border:1px;
+  border-style: solid;
+  border-color: #009688;
+}
+
+#skill li h3 { 
+	position:relative; 
+	top: -40px;
+}
+
+.bar { 
+  padding: 0;
+	height:10px; 
+  position:absolute;
+  background-color: #009688;
+}
+
+.skill1 {
+  width:90%; 
+	-moz-animation:skill1 2s ease-out;
+	-webkit-animation:skill1 2s ease-out;
+}
+
+@-moz-keyframes skill1 {0%  { width:0px;} 90%{ width:90%;}  }
+@-webkit-keyframes skill1 { 0%  { width:0px;} 90%{ width:90%;}  }
+
+
 
 #page2 {
     height: 750px;
@@ -22,78 +149,26 @@
   padding-top: 75px;
   text-align: center;
 }
-p{
-    color: teal; 
-    font-family: "Courier";
-    font-size: 20px;
-    margin: 10px 0 50px 575px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 42em;
-    animation: type 4s steps(60, end);
 
-  }
-  
-  p:nth-child(2){
-    animation: type2 8s steps(60, end);
-  }
-  
-  span{
-    animation: blink 1s infinite;
-  }
-  
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
-  
-  @keyframes type2{
-    0%{width: 0;}
-    50%{width: 0;}
-    100%{ width: 100; } 
-  } 
-  
-  @keyframes blink{
-    to{opacity: .0;}
-  }
-  
-  
-  body { background: #2d2d37;}
+a { color: white; text-decoration: none; }
 
-  a { color: white; text-decoration: none; }
-  
-  .arrow {
-    text-align: center;
-    margin: 8% 0;
-  }
-  .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-  }
-  
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-  }
+.row .col.l4 {
+  width: 23%;
+  margin: 10px;
+}
 
-  .circle
-  {
-      width:300px;
-      height:300px;
-      margin: auto;
-      margin-top: 200px;
-      background-color: teal;
-  }
+.footer-cr {
+  color: #2d2d37 !important;
+  text-align: center;
+}
 
 
-  .row .col.l4 {
-    width: 23%;
-    margin: 10px;
-  }
+.page-footer {
+  width:100% !important;
+  height:75px !important;   /* Height of the footer */
+  padding-top: 0px;
+}
+
+.footer-cr {
+padding-top: 20px !important;
+}
