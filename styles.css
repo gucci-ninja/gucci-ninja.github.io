@@ -2,6 +2,7 @@ body {
   background: white;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -12,7 +13,7 @@ header {
 
 header .face {
   background: url(images/face.png) no-repeat;
-  height: 315px;
+  height: 325px;
   width: 315px;
   position: relative;
   margin: 0 auto;
@@ -81,8 +82,7 @@ header nav a:hover {
     float: right;
     margin: 10px 10px 10px 10px;
     z-index: 2; 
-    position:relative;
-
+    position: relative;
   }
   
   .bar1, .bar2, .bar3 {
