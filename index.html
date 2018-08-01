@@ -1,96 +1,130 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <!-- Font family Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700" rel="stylesheet">
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <!-- Smooth scroll DOESNT WORK -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    
-    <!-- Smooth scroll script -->
-    <script>
-    $('.smooth').on('click', function() {
-        $.smoothScroll({
-            scrollElement: $('body'),
-            scrollTarget: '#' + this.id
-        }); 
-        return false;
-    });
-    </script>
     </head>
+
   
     <body>
-        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-        <script>
-            window.sr = ScrollReveal();
-        </script>
             
     <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper teal">
-                    <a href="#" class="brand-logo"><img src="images/gucci-ninja.png"></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="menu" onclick="overlay(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-    </header>
-    
-        <div id="page1">
-            <a id="about" class="smooth"></a>
-            <div class="face"></div>
-            <div class="tagline">
-                <p class ="css-typing">
-                    Hey there! My name is Suhavi and I'm studying software engineering at McMaster <span>|</span>
-                </p>
-            </div>
-              <div class="arrow bounce">
-                    <a href="#projects"><img src="images/double-arrow-down.png" height="42" width="42"></a>
-                </div>
-        </div>
-        <div id="page2">
-            <a id="skills" class="smooth"></a>
-            <div class=container>
-                <ul id="skill">
-                    <li><span class="bar skill1"></span><h3></h3></li>
-                    <li><span class="bar skill1"></span><h3></h3></li>
-                    <li><span class="bar skill1"></span><h3></h3></li>
-                    <li><span class="bar skill1"></span><h3></h3></li>
-                    <li><span class="bar skill1"></span><h3></h3></li>
-                    <li><span class="bar skill1"></span><h3></h3></li>
-                    <li><span class="bar skill1"></span><h3></h3></li>
-                </ul>
-            </div>
-            
-        </div>    
-        <div id="page3">
-            <a id="contact" class="smooth"></a>
-        </div>
-        <footer class="page-footer teal">
-                <div class="container">
-                        <div class="footer-cr">All content copyright 2018</div>
-                    </div>
 
-        </footer>
+        <div id="overlay" style="display: none;">
+            <img src="https://i.gifer.com/YdBR.gif" style="width:200px;height:200px;"><br>
+            <a href="#projects">Projects</a><br>
+            <a href="">Work</a><br>
+            <a href="">Contact</a>
+        </div>
+
         <script>
-            sr.reveal('.bar');
+            function overlay(menu) {
+                var x = document.getElementById("overlay");
+                menu.classList.toggle("change");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
         </script>
+
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="">Work</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="face"></div>
+    </header>
+    <div class="blurb">
+        <p>
+            Hey there! My name is Suhavi and I'm studying software engineering at McMaster University.
+        </p>
+    </div>
+    <section id="projects">
+        <div class="project">
+            <div class="project-preview">
+                <img src="images/projects/tripshoes.png">
+            </div>
+            <div class="project-info">
+                <h3>My role</h3>
+                <h1>Project Title</h1>
+                <p>A description of the project</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-info">
+                <h3>My role</h3>
+                <h1>Project Title</h1>
+                <p>A description of the project</p>
+            </div>
+            <div class="project-preview">
+                <img src="images/projects/litcoin.png">
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-preview">
+                <img src="images/projects/thunderwear.png">
+            </div>
+            <div class="project-info">
+                <h3>My role</h3>
+                <h1>Project Title</h1>
+                <p>A description of the project</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-info">
+                <h3>My role</h3>
+                <h1>Project Title</h1>
+                <p>A description of the project</p>
+                <img src="images/icons/github-mustard.png">
+                <img src="images/icons/arrow-mustard.png">
+                
+            </div>
+            <div class="project-preview">
+                <img src="images/projects/ppp.png">
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-preview">
+                <img src="images/projects/nutrius.png">
+            </div>
+            <div class="project-info">
+                <h3>My role</h3>
+                <h1>Project Title</h1>
+                <p>A description of the project</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-info">
+                <h3>My role</h3>
+                <h1>Project Title</h1>
+                <p>A description of the project</p>
+            </div>
+            <div class="project-preview">
+                <img src="images/projects/cheesetunnel.png">
+            </div>
+        </div>
+    </section>
+   
+    <section id="work">
+
+    </section>
     </body>
+
     
 </html>
 
