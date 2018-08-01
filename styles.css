@@ -71,7 +71,7 @@ header nav a:hover {
   color: #f4b648;
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 630px) {
   header nav {
     display: none;
     margin-left: 0;
