@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Words and Code</title>
+    <link>https://gucci-ninja.github.io/</link>
+    <description>Recent content on Words and Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Aug 2018 02:31:17 -0400</lastBuildDate>
+    
+	<atom:link href="https://gucci-ninja.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://gucci-ninja.github.io/post/getting_started/</link>
+      <pubDate>Fri, 03 Aug 2018 02:31:17 -0400</pubDate>
+      
+      <guid>https://gucci-ninja.github.io/post/getting_started/</guid>
+      <description>Since my co-op starts next week I thought it would be the perfect time to set up my blog so I can document my experiences. I hope I can capture what I learn every week and reflect on my time as an intern. Maybe in a year I will be showing this to the new set of co-ops.</description>
+    </item>
+    
+  </channel>
+</rss>
